@@ -25,7 +25,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-// Write your code here
+// same as sum but replaces the operator and text
 function multiply(a, b) { //eslint-disable-line
   return [a * b, 'The product of ' + a + ' and ' + b + ' is ' + (a * b) + '.']
 }
@@ -46,7 +46,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
-// Write your code here
+// uses both sum and multiply on three variables
 function sumAndMultiply(a, b, c) { //eslint-disable-line
   return [sum(sum(a, b)[0], c)[0], multiply(multiply(a, b)[0], c)[0], a + ' and ' + b + ' and ' + c + ' sum to ' + sum(sum(a, b)[0], c)[0] + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiply(multiply(a, b)[0], c)[0] + '.'];
 }
@@ -69,6 +69,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
+// this function loops through an array and sums up the array, works even if an array is empty.
 function sumArray(sumArr) { //eslint-disable-line
   var tolSum = 0;
   for(var i = 0; i < sumArr.length; i++){
@@ -94,7 +95,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
-// Write your code here
+// loops through an array and multiplies the next number to the total product so far. This assumes the array is not empty.
 function multiplyArray(multArr) { //eslint-disable-line
   var totProd = 1;
   for(var i = 0; i < multArr.length; i++){
@@ -129,7 +130,7 @@ Test this function by hand in the console to get it working, and when you think 
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-  return multiplyArray(dynamicArray);
+  return multiplyArray(dynamicArray); // we can use the fucntion we already created.
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
