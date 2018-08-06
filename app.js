@@ -75,7 +75,7 @@ function sumArray(sumArr) { //eslint-disable-line
     tolSum = sum(tolSum, sumArr[i])[0];
   }
   
-  return [tolSum, sumArr.toString() + ' was passed in as an array of numbers, and ' + tolSum + ' is their sum.']
+  return [tolSum, sumArr + ' was passed in as an array of numbers, and ' + tolSum + ' is their sum.']
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -101,7 +101,7 @@ function multiplyArray(multArr) { //eslint-disable-line
     totProd = multiply(totProd, multArr[i])[0];
   }
   
-  return [totProd, 'The numbers ' + multArr.toString() + ' have a product of ' + totProd + '.']
+  return [totProd, 'The numbers ' + multArr + ' have a product of ' + totProd + '.']
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
